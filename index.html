@@ -1,21 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bairong Zhang</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa, #e4ecf7);
+            color: #1f2937;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+            padding: 50px 45px;
+        }
+
+        .name {
+            font-size: 52px;
+            font-weight: 700;
+            margin: 0 0 12px 0;
+            color: #111827;
+        }
+
+        .subtitle {
+            font-size: 22px;
+            color: #4b5563;
+            margin-bottom: 30px;
+        }
+
+        .divider {
+            width: 80px;
+            height: 4px;
+            background: #2563eb;
+            border-radius: 999px;
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 22px;
+            font-weight: 600;
+            margin-top: 10px;
+            margin-bottom: 12px;
+            color: #1f2937;
+        }
+
+        .text {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #374151;
+            margin-bottom: 18px;
+        }
+
+        .info {
+            margin-top: 20px;
+            padding: 20px 24px;
+            background: #f8fafc;
+            border-left: 5px solid #2563eb;
+            border-radius: 12px;
+        }
+
+        .info p {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 24px;
+            color: #6b7280;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                padding: 35px 25px;
+            }
+
+            .name {
+                font-size: 40px;
+            }
+
+            .subtitle {
+                font-size: 20px;
+            }
+
+            .text, .info p {
+                font-size: 17px;
+            }
+        }
+    </style>
 </head>
-
 <body>
-    <h1>Bairong Zhang</h1>
+    <div class="container">
+        <div class="card">
+            <h1 class="name">Bairong Zhang</h1>
+            <div class="subtitle">Student at Northwestern Polytechnical University</div>
+            <div class="divider"></div>
 
-    <p>Student at Northwestern Polytechnical University</p>
+            <div class="section-title">About Me</div>
+            <p class="text">
+                I am a student at Northwestern Polytechnical University.
+                This page is created as a simple academic homepage for identity verification and professional contact.
+            </p>
 
-    <p>
-        Email:
-        <a href="mailto:zhangbairong@mail.nwpu.edu.cn">
-            zhangbairong@mail.nwpu.edu.cn
-        </a>
-    </p>
+            <div class="section-title">Contact Information</div>
+            <div class="info">
+                <p><strong>Name:</strong> Bairong Zhang</p>
+                <p><strong>Affiliation:</strong> Northwestern Polytechnical University</p>
+                <p>
+                    <strong>Email:</strong>
+                    <a href="mailto:zhangbairong@mail.nwpu.edu.cn">
+                        zhangbairong@mail.nwpu.edu.cn
+                    </a>
+                </p>
+            </div>
+        </div>
+
+        <div class="footer">
+            © 2026 Bairong Zhang
+        </div>
+    </div>
 </body>
 </html>
